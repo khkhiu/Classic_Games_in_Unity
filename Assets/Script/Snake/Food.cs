@@ -27,7 +27,6 @@ public class Food : MonoBehaviour
         if (other.tag == "Player")
         {
             RandomPosition();    
-        }
-        
+        }   
     }
 }

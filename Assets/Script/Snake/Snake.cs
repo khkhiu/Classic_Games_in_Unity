@@ -9,16 +9,16 @@ public class Snake : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.W)){
+        if (Input.GetKeyDown(KeyCode.W) || Input.GetKey(KeyCode.UpArrow)){
             _direction = Vector2.up;
         }
-        else if (Input.GetKeyDown(KeyCode.S)){
+        else if (Input.GetKeyDown(KeyCode.S)|| Input.GetKey(KeyCode.DownArrow)){
             _direction = Vector2.down;
         }
-        else if (Input.GetKeyDown(KeyCode.A)){
+        else if (Input.GetKeyDown(KeyCode.A)|| Input.GetKey(KeyCode.LeftArrow)){
             _direction = Vector2.left;
         }
-        else if (Input.GetKeyDown(KeyCode.D)){
+        else if (Input.GetKeyDown(KeyCode.D)|| Input.GetKey(KeyCode.RightArrow)){
             _direction = Vector2.right;
         }
     }

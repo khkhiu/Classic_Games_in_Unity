@@ -5,13 +5,13 @@ using UnityEngine;
 public class Snake : MonoBehaviour
 {
     private Vector2 _direction;
-    private List<Transform> _segments;
+    private List<Transform> _segments = new List<Transform>();
     public Transform SegmentPrefab;
+    public int StartSize = 4;
 
     private void Start()
     {
-        _segments = new List<Transform>();
-        _segments.Add(this.transform);
+        ResetState();
     }
 
     // Update is called once per frame
@@ -51,11 +51,34 @@ public class Snake : MonoBehaviour
         _segments.Add(segment);
     }
 
+    private void ResetState()
+    {
+        // '0' is main snake head
+        for (int i = 1; i < _segments.Count; i++)
+        {
+            Destroy(_segments[i].gameObject);
+        }
+
+        _segments.Clear();
+        _segments.Add(this.transform);
+
+        for (int i = 1; i < this.StartSize; i++)
+        {
+            _segments.Add(Instantiate(this.SegmentPrefab));
+        }
+
+        this.transform.position = Vector3.zero;
+    }
+
     private void OnTriggerEnter2D(Collider2D other) 
     {
         if (other.tag == "Food")
         {
             Grow();    
+        }
+        else if (other.tag == "Wall")
+        {
+            ResetState();
         }   
     }
 }

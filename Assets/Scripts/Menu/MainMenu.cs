@@ -5,9 +5,19 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    public void Loadgame()
+    /*
+    Scene 0 == Main Menu
+    Scene 1 == Pong
+    Scene 2 == Snake
+    */
+    public void Load_Pong()
     {
-        SceneManager.LoadScene(1);// Scene 1 == Game, Scene 0 == Main Menu
+        SceneManager.LoadScene(1);
+    }
+
+    public void Load_Snake()
+    {
+        SceneManager.LoadScene(2);
     }
 
     public void Quitgame()

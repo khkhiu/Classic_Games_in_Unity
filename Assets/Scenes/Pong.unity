@@ -796,7 +796,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 0380b9ddbf24cd4408c336320a625215, type: 3}
     m_FontSize: 50
     m_FontStyle: 0
     m_BestFit: 0
@@ -973,11 +973,11 @@ LineRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Positions:
-  - {x: 0, y: -10, z: 0}
+  - {x: 0, y: -10, z: 1}
   - {x: 0, y: 10, z: 1}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 0.11
+    widthMultiplier: 0.1
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -1729,7 +1729,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 0380b9ddbf24cd4408c336320a625215, type: 3}
     m_FontSize: 50
     m_FontStyle: 0
     m_BestFit: 0

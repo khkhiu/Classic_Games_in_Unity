@@ -18,6 +18,9 @@ public class Snake : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Used to change Time step
+        Time.fixedDeltaTime = 0.075f;
+        
         if (Input.GetKeyDown(KeyCode.W) || Input.GetKey(KeyCode.UpArrow)){
             _direction = Vector2.up;
         }

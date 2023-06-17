@@ -12,6 +12,14 @@ This is a follow up to my CS50's final assignment. The intend is to add addition
 
 ***
 
+<strong>Games completed</strong>
+
+***
+1. Snake
+2. Pong (The font has updated to better match the pong aesthetic)
+
+***
+
 <strong>To do</strong>
 
 ***

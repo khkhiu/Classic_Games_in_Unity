@@ -1745,7 +1745,7 @@ MonoBehaviour:
 
     Press ''A'' to resume
 
-    Press ''ESC'' to quit application'
+    Press ''ESC'' to quit'
 --- !u!222 &1562773827
 CanvasRenderer:
   m_ObjectHideFlags: 0

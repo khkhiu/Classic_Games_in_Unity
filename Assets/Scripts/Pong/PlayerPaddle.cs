@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 // Set to inherit elements from Paddle.cs
 public class PlayerPaddle : Paddle
@@ -20,6 +21,13 @@ public class PlayerPaddle : Paddle
         else 
         {
             _direction = Vector2.zero;
+        }
+
+        // Use R key to reset game
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            SceneManager.LoadScene(1);
+            Time.timeScale = 1;
         }
     }
 

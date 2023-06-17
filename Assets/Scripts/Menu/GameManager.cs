@@ -22,12 +22,14 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
+        /*
         // Use R key to reset game
         if (Input.GetKeyDown(KeyCode.R))
         {
             SceneManager.LoadScene(1); // Scene 1 == Game, Scene 0 == Main Menu
             Time.timeScale = 1;
         }
+        */
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             SceneManager.LoadScene(0);

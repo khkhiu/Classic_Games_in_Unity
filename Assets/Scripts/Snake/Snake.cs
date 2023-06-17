@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Snake : MonoBehaviour
 {
@@ -28,6 +29,13 @@ public class Snake : MonoBehaviour
         }
         else if (Input.GetKeyDown(KeyCode.D)|| Input.GetKey(KeyCode.RightArrow)){
             _direction = Vector2.right;
+        }
+
+        // Use R key to reset game
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            SceneManager.LoadScene(2);
+            Time.timeScale = 1;
         }
     }
 
